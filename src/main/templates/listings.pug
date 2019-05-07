@@ -1,0 +1,21 @@
+extends layout.pug
+
+block content
+  div Listings page
+
+  div(class='container')
+    div(class='row')
+      each listing, index in listings
+        div(class='col col-md-4')
+          div(class='card')
+            dl(class='card-body')
+              dt MLS#
+              dd= index + 1
+              dt Address
+              dd= listing.address
+              dt Beds
+              dd= listing.beds
+              dt Baths
+              dd= listing.baths
+              dt Square Footage
+              dd= listing.sqft
