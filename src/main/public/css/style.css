@@ -1,0 +1,22 @@
+.fixed-top {
+    background-color: #000;  
+}
+.navbar-brand {
+    color:#00CED1;
+    font-size: 24px;
+    font-family: Garamound
+    font-weight: 100;
+}
+ 
+  a {
+    padding: 8px;
+    color: #00CED1;
+    font-size: 18px;
+    font-family: Garamound;
+    font-weight: 100;
+    line-height: 35px;
+  }
+
+  .bg-dark {
+    background-color: #000;
+}
