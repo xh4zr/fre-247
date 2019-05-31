@@ -1,31 +1,294 @@
 <!doctype html>
 <html lang="en">
   <head>
+
     <title>Florida Real Estate 24/7</title>
     
   <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="src/main/public/css/jbstyle.css">
 
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">      
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">    
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjscloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  
 
-<!-- My Meta Tags etc. -->
-  <meta name="description" content="Jensen Beach Homes, Jensen Beach Real Real Estate, Florida Real Estate, Waterfront homes and condos ">
-  <meta name="keywords" content="Jensen Beach Real Estate, Jensen Beach Homes, Realtor, Real Estate, Homes, Conods">
+  <!-- My Meta Tags etc. -->
+    <meta name="description" content="Jensen Beach Homes, Jensen Beach Real Real Estate, Florida Real Estate, Waterfront homes and condos ">
+    <meta name="keywords" content="Jensen Beach Real Estate, Jensen Beach Homes, Realtor, Real Estate, Homes, Conods">
+  
+    <style>
+   
+
+a {
+    color: silver;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.959);
+    text-decoration: underline;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.dropdown-item {
+    font-weight: 900;
+    color: black;
+    background-color: lightgray;
+    border: 0;
+}
+
+</style>
 </head>
 
 
-<body>
-  <!-- Navigation -->
+  <body>
+    <!-- Navigation -->
+  
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Florida Real Estate 24/7 - Phone: 772.444.2305</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>              
+      </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              
+                <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Cities</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                  role="button" data-toggle="dropdown">Search MLS</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                    <a class="dropdown-item" href="map-search.html">Map Search</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="advanced-search.html">Advanced Search</a>
+                    
+                </li>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjscloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                role="button" data-toggle="dropdown">Sellers</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                    <a class="dropdown-item" href="our-listing-service.html">Our Listing Service / Deals</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="free-cma.html">Free CMA</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="selling-your-home-fsbo.html">Selling Your Home FSBO?</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                  role="button" data-toggle="dropdown">Buyers</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  
+                  <a class="dropdown-item" href="first-time-home-buyer.html">First Time Home Buyers</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="find-the-right-home.html">Find The Right Home</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="neighborhood-finder.html">Neighborhood Finder</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="listing-alerts.html">Listing Alert</a>
+
+
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                      role="button" data-toggle="dropdown">About Us</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      
+                      <a class="dropdown-item" href="florida-immobilien.html">Florida Immobilien</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="testimonials.html">Testimonials</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="meet-our-agents.html">Meet Our Agents</a>                       
+
+              <li class="nav-item">
+                  <a class="nav-link" href="contact-us.html">Contact Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+          </div>   
+</nav>
+
+<div class="container">              
+    <div class="row" class="FTHB" style="color: black;">
+        <div class="col-md-12" style="font-size: 50px; padding: 20px">                 
+        <h1 style="margin-top: 50px;text-align: center; font-weight: 900; color: #00a7b9">Selling Your Home Yourself:<br></h1>
+        </div>
+        <div>
+        <p>Are you looking to sell your home? Let us do a quick complimentary market analysis on your home. Just fill out as much of 
+          the form below as you want and we’ll get right back to you. There is no obligation to you and we guarantee your privacy.</p>
+        
+        <p>An important factor in deciding whether or not to sell your home is its current market value. To accurately determine what Your
+           home is worth, we perform an in-depth analysis of recent sales, listings, and pending sales of similar homes in your area and 
+           then we make adjustments based on your home’s unique features to determine your home’s market value. You may be surprised 
+           (pleasantly or otherwise) as to what you can obtain for your home in the current market and how different our estimated value 
+           may be from your annual tax statement.</p>
+
+        <P>This analysis is known as the Comparative Market Analysis, or CMA, and may be the single most important thing that your Realtor® 
+          does in listing your home for sale. If it is done incorrectly or not at all, you may price your home too high and your home may just 
+          sit on the market, or too low and you could lose valuable equity.</P>
+
+        
+        
+          <h2>Form goes here</h2>
+        
+        </div>
+      </div>
+</div>
+<footer>
+<div class="row" class="cities" style="margin-top: 25px; color: black;"></style>
+
+    <div class="col-md-2" style="text-align: center; padding-top: 15px; color: white; font-weight: 400;
+    background-color: #000; font-size: 16px;"> 
+            <img src="images/flre247-Logo.gif" margin-top="10px" alt="Florida Real Estate 24/7 - Jensen Beach Florida" width="275" height="138" />
+            <br>850 NW Federal Way #409<br>Stuart, FL 34994<br>Phone/Text:<br>772.444.2305<br> <a href="https://floridarealestate247.com/contact-us/">Email Us</a>
+            <br><a href="https://floridarealestate247.com/sitemap_index.xml">Site Map</a>
+            
+    </div>  
+
+      <div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; font-weight: 600; background-color:#000; font-size: 16px;"></style>                 
+        <font color="#00a7b9">Palm Beach County:</font>
+        <ul>
+        <li><a href="https://floridarealestate247.com/atlantis/" title="Atlantis homes for sale">Atlantis</a></li>
+
+        <li><a href="https://floridarealestate247.com/boca-raton/" title="Boca Raton homes for sale">Boca Raton</a></li>
+
+        <li><a href="https://floridarealestate247.com/boynton-beach/" title="Boynton Beach homes for sale">Boynton Beach</a></li>
+
+        <li><a href="https://floridarealestate247.com/briny-breezes/" title="Briny Breezes homes for sale">Briny Breezes</a></li> 
+
+        <li><a href="https://floridarealestate247.com/greenacres/" title="Greenacres homes for sale">Greenacres</a></li> 
+
+        <li><a href="https://floridarealestate247.com/gulf-stream/" title="Gulf Stream homes for sale">Gulf Stream</a></li> 
+
+        <li><a href="https://floridarealestate247.com/highland-beach/" title="Highland Beach homes for sale">Highland Beach</a></li> 
+
+        <li><a href="https://floridarealestate247.com/hypoluxo/" title="Hypoluxo homes for sale">Hypoluxo</a></li> 
+
+        <li><a href="https://floridarealestate247.com/juno-beach/" title="Juno Beach homes for sale">Juno Beach</a></li> 
+
+        <li><a href="https://floridarealestate247.com/jupiter/" title="Jupiter homes for sale">Jupiter</a></li> 
+
+        <li><a href="https://floridarealestate247.com/jupiter-inlet/" title="Jupiter Inlet homes for sale">Jupiter Inlet</a></li> 
+
+        <li><a href="https://floridarealestate247.com/lake-clark-shores/" title="Lake Clark Shores homes for sale">Lake Clark Shores</a></li> 
+
+        <li><a href="https://floridarealestate247.com/lake-park/" title="Lake Park homes for sale">Lake Park</a></li> 
+
+        <li><a href="https://floridarealestate247.com/lake-worth/" title="Lake Worth homes for sale">Lake Worth</a></li> 
+
+        <li><a href="https://floridarealestate247.com/lantana/" title="Lantana homes for sale">Lantana</a></li> 
+
+    </ul>
+</div>
+
+<div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; font-weight: 600; background-color:#000; font-size: 16px;"></style>                 
+    <font color="#00a7b9">Palm Beach County:</font>
+    <ul>
+        <li><a href="https://floridarealestate247.com/loxahatchee/" title="Loxahatchee homes for sale">Loxahatchee</a></li> 
+
+        <li><a href="https://floridarealestate247.com/manalapan/" title="Manalapan homes for sale">Manalapan</a></li> 
+        <li><a href="https://floridarealestate247.com/north-palm-beach/" title="North Palm Beach homes for sale">North Palm Beach</a></li> 
+
+        <li><a href="https://floridarealestate247.com/ocean-ridge/" title="Ocean Ridge homes for sale">Ocean Ridge</a></li> 
+
+        <li><a href="https://floridarealestate247.com/palm-beach/" title=" homes for sale">Palm Beach</a></li> 
+
+        <li><a href="https://floridarealestate247.com/palm-beach-gardens/" title="Palm Beach Gardens homes for sale">Palm Beach Gardens</a></li> 
+
+        <li><a href="https://floridarealestate247.com/palm-springs/" title="Palm Springs homes for sale">Palm Springs</a></li> 
+
+        <li><a href="https://floridarealestate247.com/riviera-beach/" title="Riviera Beach homes for sale">Riviera Beach</a></li> 
+
+        <li><a href="https://floridarealestate247.com/royal-palm-beach/" title="Royal Palm Beach homes for sale">Royal Palm Beach</a></li> 
+
+        <li><a href="https://floridarealestate247.com/singer-island/" title="Singer Island homes for sale">Singer Island</a></li> 
+
+        <li><a href="https://floridarealestate247.com/south-palm-beach/" title="South Palm Beach homes for sale">South Palm Beach</a></li> 
+
+        <li><a href="https://floridarealestate247.com/tequesta/" title="Tequesta homes for sale">Tequesta</a></li>
+
+        <li><a href="https://floridarealestate247.com/wellington/" title="Wellington homes for sale">Wellington</a></li> 
+
+        <li><a href="https://floridarealestate247.com/west-palm-beach/" title="West Palm Beach homes for sale">West Palm Beach</a>
+    </ul>
+</div>
+        
+    <div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; font-weight: 600; background-color:#000; font-size: 16px;"></style>                 
+        <font color="#00a7b9">St Lucie County:</font><BR>
+        <ul>
+        <li><a href="https://floridarealestate247.com/hutchinson-island/" title="Hutchinson Island homes for sale">Hutchinson Island</a></li> 
+
+        <li><a href="https://floridarealestate247.com/port-saint-lucie/" title="Port St Lucie homes for sale">Port St Lucie</a></li> 
+
+        <li><a href="https://floridarealestate247.com/fort-pierce/" title="Fort Pierce homes for sale">Fort Pierce</a>
+        </ul>
+
+    </div>
+
+
+    <div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; font-weight: 600; background-color:#000; font-size: 16px;"></style>                 
+        <font color="#00a7b9">Martin County:</font>
+        <ul>
+        
+        <li><a href="https://floridarealestate247.com/hobe-sound/" title="Hobe Sound homes for sale">Hobe Sound</a></li> 
+
+        <li><a href="https://floridarealestate247.com/hutchinson-island/" title="Hutchinson Island homes for sale">Hutchinson Island</a></li> 
+
+        <li><a href="https://floridarealestate247.com/jensen-beach/" title="Jensen Beach homes for sale">Jensen Beach</a></li> 
+
+        <li><a href="https://floridarealestate247.com/palm-city/" title="Palm City homes for sale">Palm City</a></li> 
+
+        <li><a href="https://floridarealestate247.com/sewalls-point/" title="Sewall’s Point homes for sale">Sewall's Point</a></li> 
+
+        <li><a href="https://floridarealestate247.com/stuart/" title="Stuart homes for sale">Stuart </a><BR>
+        </ul>
+
+
+    </div>    
+
+
+    <div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; font-weight: 600; background-color:#000; font-size: 16px;"></style>                 
+        
+        <font color="#00a7b9">Indian River County:</font>
+        <ul>
+        <li><a href="https://floridarealestate247.com/fellsmere/" title="Fellsmere homes for sale">Fellsmere</a></li> 
+
+        <li><a href="https://floridarealestate247.com/sebastian/" title="Sebastian homes for sale">Sebastian</a></li> 
+
+        <li><a href="https://floridarealestate247.com/vero-beach/" title="Vero Beach homes for sale">Vero Beach</a></li><BR>
+        </ul>
+    </div>
+
+</div>
+</footer>
+     
+      
 </body>
-
 </html>
