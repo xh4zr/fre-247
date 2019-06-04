@@ -1,0 +1,46 @@
+/* homepage */
+.jumbotron {
+    padding: 0rem 0rem;
+    margin-bottom: 0rem;
+    background-color: #fff!important;
+    border-radius: 0rem;
+}
+
+a {
+    color: silver;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #00a7b9;
+    text-decoration: underline;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.dropdown-item {
+    font-weight: 900;
+    color: black;
+    background-color: lightgray;
+    border: 0;
+}
+
+/* homepage-footer */
+element.style {
+    margin-top: 0px;
+    padding-top: 15px;
+    padding-left: 25px;
+    font-weight: 600;
+    background-color: #000;
+    font-size: 16px;
+    color: #00a7b9;
+}
+
+.Indian-River-County{
+    background-color: black;
+}
