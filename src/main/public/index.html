@@ -6,8 +6,8 @@
     
   <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="src/main/public/css/stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <link rel="stylesheet" href="">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -21,399 +21,526 @@
   
 
   <!-- My Meta Tags etc. -->
-    <meta name="description" content="Jensen Beach Homes, Jensen Beach Real Real Estate, Florida Real Estate, Waterfront homes and condos ">
-    <meta name="keywords" content="Jensen Beach Real Estate, Jensen Beach Homes, Realtor, Real Estate, Homes, Conods">
+    <meta name="description" content="Florida Real Estate, Jensen Beach Homes, Jensen Beach Condos, Jensen Beach Real Real Estate">
+    <meta name="keywords" content="Florida Real Estate">
   
-    <style>
-
-.jumbotron {
-    padding: 0rem 0rem;
-    margin-bottom: 0rem;
-    background-color: #fff!important;
-    border-radius: 0rem;
+<style>
+.btn-group-lg>.btn, .btn-lg {
+    padding: .2rem .2rem;
+    font-size: 24px;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    color: #fff;
+    font-weight: 500;
 }
-
-
 a {
     color: #fff;
     text-decoration: none;
     background-color: transparent;
+    font-size: 18px;
 }
-
 a:hover {
     color: #00a7b9;
     text-decoration: underline;
 }
-
+a.house-worth {
+    color: black;
+    text-decoration: underline;
+    background-color: transparent;
+    font-size: 28px;
+}
+a.house-worth:hover {
+    color: #fff;
+    text-decoration: underline;
+    background-color: transparent;
+    font-size: 28px;
+}
+a.property-alerts {
+    color: #00a7b9;
+    text-decoration: underline;
+    background-color: transparent;
+    font-size: 28px;
+}
+a.property-alerts:hover {
+    color: #000;
+    text-decoration: underline;
+}
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 0px;
   
 }
 .dropdown-item {
-    font-weight: 900;
-    color: black;
-    background-color: lightgray;
+    font-weight: 600;
+    color: #212529;
+    background-color: #00a7b9;
     border: 0;
 }
-        
-        </style>
+.dropdown-menu.show {
+    display: block;
+    background-color: #00a7b9;
+}
+hr {
+  border: 2px solid black;
+}
+.cont-seller-full-service {
+    background-color: #00a7b9;
+}
+.cont-buyers {
+    background-color: #F9F9F9;
+}
+.cont-buyers p {
+    color: #101010;
+}
+
+#button-up {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: silver;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 24px;
+  font-weight: 900;
+}
+
+#button-up:hover {
+  background-color: red;
+}
+
+
+
+</style>
   
 </head>
-
-
   <body>
-  
     <!-- Navigation -->
-  
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">Florida Real Estate 24/7 - Phone: 772.444.2305</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-              <span class="navbar-toggler-icon"></span>              
-        </button>
-  
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                
-                  <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-  
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Cities</a>
-                </li>
-  
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                    role="button" data-toggle="dropdown">Search MLS</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-  
-                      <a class="dropdown-item" href="map-search.html">Map Search</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="advanced-search.html">Advanced Search</a>
-                      
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">Florida Real Estate 24/7 - Phone: 772.444.2305</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>              
+          </button>
+    
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  
+                    <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
                   </li>
-  
-  
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                  role="button" data-toggle="dropdown">Sellers</a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-  
-                      <a class="dropdown-item" href="our-listing-service.html">Our Listing Service / Deals</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="free-cma.html">Free CMA</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="selling-your-home-fsbo.html">Selling Your Home FSBO?</a>
-                </li>
-                
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                    role="button" data-toggle="dropdown">Buyers</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    
-                    <a class="dropdown-item" href="first-time-home-buyer.html">First Time Home Buyers</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="find-the-right-home.html">Find The Right Home</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="neighborhood-finder.html">Neighborhood Finder</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="listing-alerts.html">Listing Alert</a>
-  
-  
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                        role="button" data-toggle="dropdown">About Us</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        
-                        <a class="dropdown-item" href="florida-immobilien.html">Florida Immobilien</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="testimonials.html">Testimonials</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="meet-our-agents.html">Meet Our Agents</a>                       
-  
-                <li class="nav-item">
-                    <a class="nav-link" href="contact-us.html">Contact Us</a>
-                  </li>
-  
+    
                   <li class="nav-item">
-                      <a class="nav-link" href="login.html">Login</a>
+                      <a class="nav-link" href="#">Cities</a>
                   </li>
-              </ul>
-            </div>   
-  </nav>
+    
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                      role="button" data-toggle="dropdown">Search MLS</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    
+                        <a class="dropdown-item" href="map-search.html">Map Search</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="advanced-search.html">Advanced Search</a>
+                        
+                    </li>
+    
+    
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                    role="button" data-toggle="dropdown">Sellers</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    
+                      <a class="dropdown-item" href="our-listing-service.html">Our Listing Service / Deals</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="free-cma.html">Free CMA</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="selling-your-home-fsbo.html">Selling Your Home FSBO</a>
+                  </li>
+                  
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                      role="button" data-toggle="dropdown">Buyers</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      
+                      <a class="dropdown-item" href="first-time-home-buyer.html">First Time Home Buyers</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="find-the-right-home.html">Find The Right Home</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="neighborhood-finder.html">Neighborhood Finder</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="listing-alert.html">Listing Alert</a>
+    
+    
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                          role="button" data-toggle="dropdown">About Us</a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          
+                          <a class="dropdown-item" href="florida-immobilien.html">Florida Immobilien</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="testimonials.html">Testimonials</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="meet-our-agents.html">Meet Our Agents</a>                       
+    
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+              </div>   
+    </nav>
+  <!-- Go to top -->
+
+  <button onclick="topFunction()" id="button-up" title="Go to top">Top</button>
 
 <!-- Main BG Image -->
-<div class="bs-example">  
-<div class="jumbotron">
-        <img src="images/homewhite.jpeg" class=" col-md-12 img-responsive" alt="Florida Real Estate" height="500px"/>
+<section>
+    <div class="BG-Image">  
+    <div class="row" class="imgwh" style="color: black;">
+        <img src="images/homewhite.jpeg" class=" col-md-12 img-responsive"  alt="Florida Real Estate" height="500px"/>
         <div class="whitehouseimage"></div>
         <p class="lead"></p>
+    </div>
 </div>
-</div>                
+</section>                
  <!-- List of cities -->   
-<div class="container">              
-    <div class="row" class="cities" style="color: black;">
+ <section style="background-color: #fff;">
+ <div class="container">              
+    <div class="row" style="color: black;">
       <div class="col-md-12" style="font-size: 50px; padding: 20px">                 
         <h3 style="text-align: center; font-weight: 900; color: #00a7b9">Palm Beach County<br></h3>
-        <h4 style="text-align: center; font-weight: 900; color: black">Select A City To View Real Estate Listed For Sale & Rent </h4>                     
+        <h4 style="text-align: center; font-weight: ; color: #000">Select A City To View Real Estate Listed For Sale & Rent </h4>                     
       </div>
           
-        <div class="col-lg-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a href="https://realestatehomescondos.com/atlantis" title="Atlantis real estate. View homes and condos for sale & rent" class="btn btn-info btn-lg btn-block" >Atlantis</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                 
+            <a href="https://realestatehomescondos.com/atlantis" title="Atlantis real estate. View Atlantis homes and condos for sale & rent" class="btn btn-info btn-lg btn-block" >Atlantis</a>                      
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a href="https://floridarealestate247.com/boca-raton" title="Boca Raton real estate. Boca Raton homes. Boca Raton condos" class="btn btn-info btn-lg btn-block" ><nobr>Boca Raton</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a href="https://floridarealestate247.com/boca-raton" title="Boca Raton real estate. Boca Raton homes. Boca Raton condos" class="btn btn-info btn-lg btn-block" >Boca Raton</a>                      
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a href="https://floridarealestate247.com/boynton-beach" title="Boynton Beach real estate. View homes and condos for sale & rent" class="btn btn-info btn-lg btn-block"><nobr>Boynton Beach</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a href="https://floridarealestate247.com/boynton-beach" title="Boynton Beach real estate. View Boynton Beach homes and condos for sale & rent" class="btn btn-info btn-lg btn-block">Boynton Beach</a>                      
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a href="https://floridarealestate247.com/briny-breezes" title="Briny Breezes real estate. View homes and condos for sale & rent"  class="btn btn-info btn-lg btn-block"><nobr>Briny Breezes</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a href="https://floridarealestate247.com/briny-breezes" title="Briny Breezes real estate. View Briny Breezes homes and condos for sale & rent"  class="btn btn-info btn-lg btn-block">Briny Breezes</a>                      
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/delray-beach" title="Delray Beach real estate. View homes and condos for sale & rent"><nobr>Delray Beach</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/delray-beach" title="Delray Beach real estate. View Delray Beach homes and condos for sale & rent">Delray Beach</a>                      
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/greenacres" title="Greenacres real estate. View homes and condos for sale & rent"><nobr>Greenacres</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/greenacres" title="Greenacres real estate. View Greenacres homes and condos for sale & rent">Greenacres</a>                      
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/gulf-stream"title="Gulf Stream real estate. View homes and condos for sale & rent"><nobr>Gulf Stream</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/gulf-stream"title="Gulf Stream real estate. View Gulf Stream homes and condos for sale & rent">Gulf Stream</a>                      
         </div>
               
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/highland-beach" title="Highland Beach real estate. View homes and condos for sale & rent"><nobr>Highland Beach</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/highland-beach" title="Highland Beach real estate. View Highland Beach homes and condos for sale & rent">Highland Beach</a>                      
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-        <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/hypoluxo" title="Hypoluxo real estate. Hypoluxo homes condos for sale & rent"><nobr>Hypoluxo</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+        <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/hypoluxo" title="Hypoluxo real estate. Hypoluxo homes condos for sale & rent">Hypoluxo</a>                      
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/juno-beach" title=" real estate. View homes and condos for sale & rent"><nobr>Juno Beach</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/juno-beach" title="Juno Beach real estate. View Juno Beach homes and condos for sale & rent">Juno Beach</a>                      
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/jupiter" title=" real estate. View homes and condos for sale & rent"><nobr>Jupiter</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/jupiter" title="Jupiter real estate. View Jupiter homes and condos for sale & rent">Jupiter</a>                      
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/jupiter-inlet" title=" real estate. View homes and condos for sale & rent"><nobr>Jupiter Inlet</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/jupiter-inlet" title="Jupiter Inlet real estate. View Jupiter Inlet homes and condos for sale & rent">Jupiter Inlet</a>                      
         </div>
             
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/lake-park" title=" real estate. View homes and condos for sale & rent"><nobr>Lake Clark Shores</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/lake-park" title="Lake Clark Shores real estate. View Lake Clark Shores homes and condos for sale & rent">Lake Clark Shores</a>                      
         </div>
           
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/lake-park" title=" real estate. View homes and condos for sale & rent"><nobr>Lake Park</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/lake-park" title="Lake Park real estate. View Lake Park homes and condos for sale & rent">Lake Park</a>                      
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/lake-worth" title=" real estate. View homes and condos for sale & rent"><nobr>Lake Worth</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/lake-worth" title="Lake Worth real estate. View Lake Worth homes and condos for sale & rent">Lake Worth</a>                      
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/lantana" title=" real estate. View homes and condos for sale & rent">Lantana</a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/lantana" title="Lantana real estate. View Lantana homes and condos for sale & rent">Lantana</a>                      
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/loxahatchee" title=" real estate. View homes and condos for sale & rent"><nobr>Loxahatchee</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/loxahatchee" title="Loxahatchee real estate. View Loxahatchee homes and condos for sale & rent">Loxahatchee</a>                      
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/manalapan" title=" real estate. View homes and condos for sale & rent"><nobr>Manalapan</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/manalapan" title="Manalapan real estate. View Manalapan homes and condos for sale & rent">Manalapan</a>                      
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/north-palm-beach" title=" real estate. View homes and condos for sale & rent"><nobr>North Palm Beach</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/north-palm-beach" title="North Palm Beach real estate. View North Palm Beach homes and condos for sale & rent">North Palm Beach</a>                      
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/ocean-ridge" title=" real estate. View homes and condos for sale & rent"><nobr>Ocean Ridge</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/ocean-ridge" title="Ocean Ridge real estate. View Ocean Ridge homes and condos for sale & rent">Ocean Ridge</a>                      
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/palm-beach" title=" real estate. View homes and condos for sale & rent"><nobr>Palm Beach</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/palm-beach" title="Palm Beach real estate. View homes and condos for sale & rent">Palm Beach</a>                      
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/palm-beach-gardens" title=" real estate. View homes and condos for sale & rent"><nobr>Palm Beach Gardens</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/palm-beach-gardens" title="Palm Beach Gardens real estate. View Palm Beach Gardens homes and condos for sale & rent">Palm Beach Gardens</a>                      
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/palm-springs"><nobr>Palm Springs</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/palm-springs" title="Palm Springs real estate. View Palm Springs homes and condos for sale & rent">Palm Springs</a>
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/riviera-beach" title=" real estate. View homes and condos for sale & rent"><nobr>Riviera Beach</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">
+                <span class="glyphicon glyphicon-home"></span>                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/riviera-beach" title="Riviera Beach real estate. View Riviera Beach homes and condos for sale & rent">Riviera Beach</a>                      
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/royal-palm-beach" title=" real estate. View homes and condos for sale & rent"><nobr>Royal Palm Beach</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/royal-palm-beach" title="Royal Palm Beach real estate. View Royal Palm Beach homes and condos for sale & rent">Royal Palm Beach</a>                      
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/singer-island" title=" real estate. View homes and condos for sale & rent"><nobr>Singer Island</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/singer-island" title="Singer Island real estate. View Singer Island homes and condos for sale & rent">Singer Island</a>                      
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/south-palm-beach" title=" real estate. View homes and condos for sale & rent"><nobr>South Palm Beach</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/south-palm-beach" title="South Palm Beach real estate. View South Palm Beach homes and condos for sale & rent">South Palm Beach</a>                      
         </div>
 
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/tequesta" title=" real estate. View homes and condos for sale & rent"><nobr>Tequesta</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/tequesta" title="Tequesta real estate. View Tequesta homes and condos for sale & rent">Tequesta</a>                      
         </div>
 
-        <div class="col-md-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/wellington" title=" real estate. View homes and condos for sale & rent"><nobr>Wellington</nobr></a></button>                      
+        <div class="col-md-4" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/wellington" title="Wellington real estate. View Wellington homes and condos for sale & rent">Wellington</a>                      
         </div>
 
-        <div class="col-md-6" style="margin-bottom: 50px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/west-palm-beach" title=" real estate. View homes and condos for sale & rent"><nobr>West Palm Beach</nobr></a></button>                      
+        <div class="col-md-4" style="margin-bottom: 50px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/west-palm-beach" title="West Palm Beach real estate. View West Palm Beach homes and condos for sale & rent">West Palm Beach</a>                      
         </div>
-                  
-        <div class="col-md-12" style="font-size: 50px; margin-bottom: 10px;"></style>                 
-            <h3 style="text-align: center; font-weight: 900; color: #00a7b9">Martin County<br></h3>
-            <h4 style="text-align: center; font-weight: 900; color: black">Select A City To View Real Estate Listed For Sale & Rent </h4>              </div>        
+    </div>
+</div>
+</section>
+
+ <!-- Martin County cities -->   
+ <section style="background-color: #000;">
+
+ <div class="container">              
+    <div class="row" style="color: black;">
+        <div class="col-md-12" style="font-size: 50px; padding: 20px;"></style>                 
+            <h3 style="text-align: center; font-weight: 900; color: #00a7b9;">Martin County<br></h3>
+            <h4 style="text-align: center; color: #fff;">Select A City To View Real Estate Listed For Sale & Rent </h4>
+        </div>        
           
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/hobe-sound" title="Hobe Sound real estate. View homes and condos for sale & rent"><nobr>Hobe Sound</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/hobe-sound" title="Hobe Sound real estate. View Hobe Sound homes and condos for sale & rent">Hobe Sound</a>                      
         </div>
   
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/jensen-beach" title="Jensen Beach real estate. View homes and condos for sale & rent"><nobr>Jensen Beach</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/jensen-beach" title="Jensen Beach real estate. View Jensen Beach homes and condos for sale & rent">Jensen Beach</a>                      
         </div>
   
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/Indiantown" title="Indiantown real estate. View homes and condos for sale & rent">Indiantown</a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/Indiantown" title="Indiantown real estate. View Indiantown homes and condos for sale & rent">Indiantown</a>                      
         </div>
   
-        <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/palm-city" title="Palm City real estate. View homes and condos for sale & rent"><nobr>Palm City</nobr></a></button>                      
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/palm-city" title="Palm City real estate. View Palm City homes and condos for sale & rent">Palm City</a>                      
         </div>
                 
         <div class="col-md-4" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/sewalls-point" title="Sewall’s Point real estate. View homes and condos for sale & rent"><nobr>Sewall's Point</nobr></a></button>                      
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/sewalls-point" title="Sewall’s Point real estate. View Sewall's Point homes and condos for sale & rent">Sewall's Point</a>                      
         </div>
-  
-        <div class="col-md-4" style="margin-bottom: 20px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/stuart" title="Stuart real estate. View homes and condos for sale & rent">Stuart</a></button>                      
-        </div>
-  
-        <div class="col-md-4" style="margin-bottom: 50px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/hutchinson-island" title="Hutchinson Island real estate. View homes and condos for sale & rent"><nobr>Hutchinson Island</nobr></a></button>                      
-        </div>
-  
-         <div class="col-md-12" style="margin-bottom: 10px; font-size: 50px;"></style>                 
-            <h3 style="text-align: center; font-weight: 900; color: #00a7b9">Saint Lucie County<br></h3>
-            <h4 style="text-align: center; font-weight: 900; color: black">Select A City To View Real Estate Listed For Sale & Rent </h4>              </div>        
   
         <div class="col-md-4" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/port-saint-lucie" title="Port Saint Lucie real estate. View homes and condos for sale & rent"><nobr>Port St Lucie</nobr></a></button>                      
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/stuart" title="Stuart real estate. View Stuart homes and condos for sale & rent">Stuart</a>                      
+        </div>
+  
+        <div class="col-md-12" style="margin-bottom: 30px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/hutchinson-island" title="Hutchinson Island real estate. View Hutchinson Island homes and condos for sale & rent">Hutchinson Island</a>                      
+        </div>
+    </div> 
+</div>
+</section>
+
+ <!-- Saint Lucie County cities -->
+ <section style="background-color: #fff;">   
+<div class="container">              
+    <div class="row" style="color: black;">
+                
+        <div class="col-md-12" style="padding: 20px; margin-bottom: 10px; font-size: 50px;">                
+            <h3 style="text-align: center; font-weight: 900; color: #00a7b9">Saint Lucie County<br></h3>
+            <h4 style="text-align: center; font-weight: ; color: black">Select A City To View Real Estate Listed For Sale & Rent </h4>              </div>        
+  
+        <div class="col-md-4" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/port-saint-lucie" title="Port Saint Lucie real estate. View Port St Lucie homes and condos for sale & rent">Port St Lucie</a>                      
         </div> 
   
         <div class="col-md-4" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/fort-pierce" title="Fort Pierce real estate. View homes and condos for sale & rent"><nobr>Fort Pierce</nobr></a></button>                      
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/fort-pierce" title="Fort Pierce real estate. View Fort Pierce homes and condos for sale & rent">Fort Pierce</a>                      
         </div>
   
-        <div class="col-md-4" style="margin-bottom: 50px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/hutchinson-island" title="Hutchinson Island real estate. View homes and condos for sale & rent"><nobr>Hutchinson Island</nobr></a></button>                      
-        </div>
-  
-        <div class="col-md-12" style="margin-bottom: 10px; font-size: 50px;"></style>                 
-            <h3 style="text-align: center; font-weight: 900; color: #00a7b9">Indian River County<br></h3>
-            <h4 style="text-align: center; font-weight: 900; color: black">Select A City To View Real Estate Listed For Sale & Rent </h4>              </div> 
-  
-        <div class="col-md-4" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/vero-beach" title="Vero Beach real estate. View homes and condos for sale & rent"><nobr>Vero Beach</nobr></a></button>                      
-        </div>
-
-        <div class="col-md-4" style="margin-bottom: 10px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/fellsmere" title="Fellsmere real estate. View homes and condos for sale & rent">Fellsmere</a></button>                      
-        </div>
-
-        <div class="col-md-4" style="margin-bottom: 50px;">                  
-            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/sebastian" title="Sebastian real estate. View homes and condos for sale & rent">Sebastian</a></button>                      
+        <div class="col-md-4" style="margin-bottom: 25px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/hutchinson-island" title="Hutchinson Island real estate. View Hutchinson Island homes and condos for sale & rent">Hutchinson Island</a>                      
         </div>
     </div> 
-</div>  
-      
-      
-<div class="container">
+</div>
+</section>  
 
-    <div class="row" class="cities" style="color: black;"></style>
+ <!-- Indian River County cities -->   
+ <section style="background-color: #000;">
 
-      <div class="col-md-6" style="margin-top: 10px; font-weight: 900; padding: 10px; border-right: 6px solid white; color: #fff; font-weight: 600; background-color: #00a7b9; 
-      margin-bottom: 0px; font-size: 24px;"> 
-              <img src="images/FLRE247-Logo.gif" alt="Florida Real Estate 24/7 - Jensen Beach Florida" width="330" height="154" align: center;/><br>
-        <h2 style="text-align:center;color: #000; font-weight: 900;" >Buyers (Cash Back):</h2> 
-        <p style="text-align:center;">Receive the following percentage from our commission towards your closing cost if we represent you in purchasing a property:</p>
-        <p style="text-align:center;">15% - Price Range: $100,000 -> $249,999</p>
-        <p style="text-align:center;">20% - Price Range: $250,000 -> $749,999 </p>
-        <p style="text-align:center;">25% - Price Range: $750,000 plus</p>
-        <p style="text-align:center; font-weight: 900; color: #000; font-size: 28px">Click here for more information</p>                    
-      </div>   
-
-      <div class="col-md-6" style="margin-top: 10px; font-weight: 900; padding: 10px; border-right: 6px solid white; color: #fff; font-weight: 600; background-color: #00a7b9; 
-      margin-bottom: 0px; font-size: 24px;">   
-                    <img src="images/FLRE247-Logo.gif" alt="Florida Real Estate 24/7 - Jensen Beach Florida" width="330" height="154" align: center;/><BR>
-                        
-        <h2 style="text-align:center;color: black; font-weight: 900;">Sellers (Full Service):</h2>  
-        <p style="text-align:center;">Save thousands of $$$ when using our listing service. Our full service listing commission starts as low as 1.50%. Please see below.</p>
-        <p style="text-align:center;">2.00% - Price Range: $100,000 -> $249,999</p>
-        <p style="text-align:center;">1.75% - Price Range: $250,000 -> $749,999 </p>
-        <p style="text-align:center;">1.50% - Price Range: $750,000 plus</p>
-        <p style="text-align:center; font-weight: 900; font-size: 28px; color: black;">Click here for more information</p>        
-                        
-      </div>
-
-      <div class="col-md-6" style="margin-top: 20px; font-weight: 900; padding: 10px; border-right: 6px solid white; color: #fff; font-weight: 600; 
-                    background-color: #00a7b9; margin-bottom: 0px; font-size: 24px;">   
-                    <img src="images/FLRE247-Logo.gif" alt="Florida Real Estate 24/7 - Jensen Beach Florida" width="330" height="154" align: center;/><br>
-                    <h2 style="text-align:center; color: #000; font-weight: 900;">Property Alerts</h2>
-                    <p style="text-align:center;">Save, share, and keep track of your favorites.</p>
-                    <p style="text-align:center;">Listings will be automatically added.</p>
-                    <p style="text-align:center;">Alerts can be sent daily, on specific days, weekly, biweekly or no email alerts at all. You just check YOUR PERSONALIZED web portal whenever you decide.</p>
-                    <p style="text-align:center;">Unsubscribe from email alerts at any time.</p>
-                    <p style="text-align:center; font-weight: 900; color: #000; font-size: 28px">Let's Get Started</p>                                 
-      </div>
-
+ <div class="container">              
+    <div class="row" style="padding: 20px; color: black;">
        
+        <div class="col-md-12" style="margin-bottom: 10px; font-size: 50px;"></style>                 
+            <h3 style="text-align: center; font-weight: 900; color: #00a7b9">Indian River County<br></h3>
+            <h4 style="text-align: center; font-weight: 0; color: #fff">Select A City To View Real Estate Listed For Sale & Rent </h4>
+        </div> 
+  
+        <div class="col-md-4" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/vero-beach" title="Vero Beach real estate. View Vero Beach homes and condos for sale & rent">Vero Beach</a>                      
+        </div>
 
-      <div class="col-md-6" style="margin-top: 20px; font-weight: 900; padding: 10px; border-right: 6px solid white;color: #fff; font-weight: 600; 
-                    background-color: #00a7b9; margin-bottom: 0px; font-size: 24px;">  
-                                  <img src="images/FLRE247-Logo.gif" alt="Florida Real Estate 24/7 - Jensen Beach Florida" width="330" height="154" align: center;/><br>
+        <div class="col-md-4" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/fellsmere" title="Fellsmere real estate. View Fellsmere homes and condos for sale & rent">Fellsmere</a>                      
+        </div>
+
+        <div class="col-md-4" style="margin-bottom: 10px;">                  
+            <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/sebastian" title="Sebastian real estate. View Sebastian homes and condos for sale & rent">Sebastian</a>                      
+        </div>
+    </div> 
+</div> 
+</section> 
+          
+ <!--Buyers Cash Back-->
+ <section style="background-color: #F9F9F9;">
+ <div class="container">
+     <div class="cont-buyers">
+
+            <div class="row" style="color: black;">
+            <div class="col-md-" style="font-weight: 400; padding-top: 20px;
+            margin-bottom: 0px; font-size: 24px;">
+                          <!--<img src="images/FLRE247-Logo.gif" alt="Florida Real Estate 24/7 - Jensen Beach Florida" width="300" height="150" align: center;/><br> -->
+ 
+            <h2 style="text-align:center;color: #00a7b9; font-weight: 900;" >$$$ Buyers Rebate:</h2> 
+            <p style="text-align:center;">Traditionally, when you purchase a home, buyer agents are paid a commission, usually 2.5-3% of the sales price.  When you buy your home with Florida Real Estate 24/7, our fee is 1.5% or $ 4,000, whichever is more, and the remaining commission is rebated back to you. Typically 1-1.5% of the sales price. The rebate is usually applied toward your closing cost or issued as a check after closing with lender approval. </p>
+            <p style="text-align:center;"></p>
+            <p style="text-align:center;"></p>
+            <p style="text-align:center;"></p>
+            <p style="text-align:center; font-weight: 900; color: #00a7b9; font-size: 28px"><a class="property-alerts" href="https://floridarealestate247.com/home-value/" title="Atlantis homes for sale">More Information</a></p>
+            </div>
+        </div> 
+    </div> 
+</div>
+</section> 
+
+
+ <!--Sellers Full Service-->
+ <section style="background-color: #00a7b9;">
+
+ <div class="container">
+        <div class="cont-seller-full-service">
+
+
+            <div class="row" style="color: black;">   
+                <div class="col-md-6" style="margin-top: 0px; font-weight: 900; padding: 20px 40px;  white; color: #fff; font-weight: 600; background-color: 00a7b9; margin-bottom: 0px; font-size: 24px; border-right: 10px solid white;">   
+                                
+                <h2 style="text-align:center;color: black; font-weight: 900;">Sellers (1.5% Listing Fee):</h2>  
+                <p style="text-align:center;">Save thousands of $$$ when using our FULL listing service. Our full service listing commission is 1.50% or $2,500 whichever is more.</p>
+                
+                
+                <p style="text-align:center; font-weight: 900; color: black;">
+                    <a class="house-worth" href="https://floridarealestate247.com/home-value/" title="Atlantis homes for sale">More information</a></p>        
+            </div>
+            <div class="col-md-6" style="margin-top: 0px; font-weight: 900; padding: 20px 40px;  white; color: #fff; font-weight: 600; background-color: 00a7b9; margin-bottom: 0px; font-size: 24px;">   
+                                
+                    <h2 style="text-align:center;color: black; font-weight: 900;">Sellers Savings:</h2>  
+                    
+                    <p style="font-size: 24px; text-align:center;"><font color: #fff>Selling Price: $300,000 - Savings $4,500<font color="white"><br></font>Selling Price: $400,000 - Savings $6,000<br>Selling Price: $600,000 - Savings $9,000<font color="white"><br></font>Selling Price: $750,000 - Savings $11,250</font></p>
+                    
+                    <p style="text-align:center; font-weight: 900; color: black;">
+                        <a class="house-worth" href="https://floridarealestate247.com/home-value/" title="Atlantis homes for sale">More information</a></p>        
+                </div>
+        </div>
+    </div> 
+</div>
+</section>
+
+
+ <!--Property Alerts-->
+<section style="background-color: #f2f2f2F9;">
+<div class="container">
+        <div class="row" style="margin: 0px;">
+  
+            <div class="col-md-12" style="font-weight: 900; padding: 20px 40px; font-weight: 600; 
+            background-color: ; margin-bottom: 0px; font-size: 24px;">   
+            <h2 style="text-align:center; color: #00a7b9; font-weight: 900;">Property Alerts</h2>
+            <p style="text-align:center;">Save, share, and keep track of your favorites. New listings will be automatically added.</p>
+            <p style="text-align:center;">Alerts can be sent daily, on specific days, weekly, biweekly or no email alerts at all. You just check YOUR PERSONALIZED web portal whenever you decide.</p>
+            <p style="text-align:center;">Unsubscribe from email alerts at any time.</p>
+            <p style="text-align:center; font-weight: 900; color: #00a7b9; font-size: 28px"><a class="property-alerts" href="https://floridarealestate247.com/home-value/" title="Atlantis homes for sale">Let's Get Started</a></p>                                 
+            </div>
+    
+        </div> 
+</div>
+</section>
+
+
+<!--What's My Home Worth-->
+<section style="background-color: #00a7b9;">
+        <div class="container">
+
+    <div class="row" style="color: black;">
+        <div class="col-md-12" style="margin-top: 0px; font-weight: 400; padding: 20px; white;color: #fff;
+        background-color: #00a7b9;font-size: 24px;">  
             
         <h2 style="text-align:center; color: #000; font-weight: 900;">What's My Home Worth</h2> 
         <p style="text-align:center;">Real Estate Values Available Instantly!</p>
-        <p style="text-align:center;">Step 1:<br>Enter Property Address</p>
-        <p style="text-align:center;">Step 2:<br>Enter Email Address</p>
-        <p style="text-align:center;">Step 3:<br>Receive Estimated Price Range Of Property</p>
-        <p style="text-align:center; font-weight: 900; color: #000; font-size: 28px; color: #000;"><a href="https://floridarealestate247.com/home-value/" title="Atlantis homes for sale">Let's Get Started</a></p>                             
-      </div>
+        <p style="text-align:center; font-size: 24px">RPR Widget Goes Here</p>
+        <p style="text-align:center; font-weight: 900; color: #000; font-size: 28px; color: #000;"><a class="house-worth" href="https://floridarealestate247.com/home-value/" title="Atlantis homes for sale">Let's Get Started</a></p>                             
+        </div>
     </div>
 </div>
-      
-         
+</section>
+        
+ <!--Footer-->
+ <section style="background-color: #000;">
+        <div class="container">
+    <div class="row" style="margin: 0px;" style="margin-top: 0px; color: black;"></style>
 
-<div class="row" class="cities" style="margin-top: 25px; color: black;"></style>
-
-    <div class="col-md-2" style="text-align: center; padding-top: 15px; color: #fff; font-weight: 900; 
-    background-color: #000; font-size: 16px;"> 
-            <img src="images/FLRE247-Logo.gif" margin-top="10px" alt="Florida Real Estate 24/7 - Jensen Beach Florida" width="275" height="138" />
-            <br>850 NW Federal Way #409<br>Stuart, FL 34994<br>Phone/Text:<br>772.444.2305<br> <a href="https://floridarealestate247.com/contact-us/">Email Us</a>
+        <div class="col-md-2" style="text-align: center; padding-top: 15px; color: #fff; font-weight: 0; 
+            background-color: #000; font-size: 16px;"> 
+            <img src="images/FLRE247-Logo.gif" margin-top="10px" alt="Florida Real Estate 24/7 - Jensen Beach Florida" width="150" height="80" />
+            <br>850 NW Federal Hwy Way #409<br>Stuart, FL 34994<br>Phone/Text:<br>772.444.2305<br> <a href="https://floridarealestate247.com/contact-us/">Email Us</a>
             <br><a href="https://floridarealestate247.com/sitemap_index.xml">Site Map</a>            
-    </div>
+        </div>
 
-    <div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; font-weight: 600; background-color:#000; font-size: 16px;"></style>                 
+        <div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; font-weight: ; background-color:#000; font-size: 14px;"></style>                 
         <font color="#00a7b9">Palm Beach County:</font>
         <ul>
         <li><a href="https://floridarealestate247.com/atlantis/" title="Atlantis homes for sale">Atlantis</a></li>
@@ -448,7 +575,7 @@ img {
         </ul>
     </div>
 
-<div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; font-weight: 600; background-color:#000; font-size: 16px;"></style>                 
+<div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; font-weight: 0; background-color:#000; font-size: 14px;"></style>                 
     <font color="#00a7b9">Palm Beach County:</font>
     <ul>
         <li><a href="https://floridarealestate247.com/loxahatchee/" title="Loxahatchee homes for sale">Loxahatchee</a></li> 
@@ -480,7 +607,7 @@ img {
     </ul>
 </div>
         
-    <div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; font-weight: 600; background-color:#000; font-size: 16px;"></style>                 
+    <div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; font-weight: 0; background-color:#000; font-size: 14px;"></style>                 
         <font color="#00a7b9">St Lucie County:</font><BR>
         <ul>
         <li><a href="https://floridarealestate247.com/hutchinson-island/" title="Hutchinson Island homes for sale">Hutchinson Island</a></li> 
@@ -493,7 +620,7 @@ img {
     </div>
 
 
-    <div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; font-weight: 600; background-color:#000; font-size: 16px;"></style>                 
+    <div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; font-weight: 0; background-color:#000; font-size: 14px;"></style>                 
         <font color="#00a7b9">Martin County:</font>
         <ul>
         
@@ -514,7 +641,7 @@ img {
     </div>    
 
 
-    <div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; font-weight: 600; background-color:#000; font-size: 16px;"></style>                 
+    <div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; font-weight: 0; background-color:#000; font-size: 14px;"></style>                 
         
         <font color="#00a7b9">Indian River County:</font>
         <ul>
@@ -527,8 +654,41 @@ img {
     </div>
 
 </div>
- 
-     
-      
+</div>
+</section>
+
+
+<script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("button-up").style.display = "block";
+          } else {
+            document.getElementById("button-up").style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+        
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5c8902fbc37db86fcfcd8d94/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 </html>
