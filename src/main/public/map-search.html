@@ -1,139 +1,215 @@
 <!doctype html>
 <html lang="en">
-  <head>
+    <head>
 
-    <title>Florida Real Estate 24/7</title>
+        <title>Florida Real Estate 24/7</title>
+        
+      <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <link rel="stylesheet" href="">
     
-  <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="src/main/public/css/jbstyle.css">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">    
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjscloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-  
-
-  <!-- My Meta Tags etc. -->
-    <meta name="description" content="Jensen Beach Homes, Jensen Beach Real Real Estate, Florida Real Estate, Waterfront homes and condos ">
-    <meta name="keywords" content="Jensen Beach Real Estate, Jensen Beach Homes, Realtor, Real Estate, Homes, Conods">
-  
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">    
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjscloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+      
+    
+      <!-- My Meta Tags etc. -->
+        <meta name="description" content="Florida Real Estate, Jensen Beach Homes, Jensen Beach Condos, Jensen Beach Real Real Estate">
+        <meta name="keywords" content="Florida Real Estate">
+      
     <style>
-   
-
-a {
-    color: silver;
-    text-decoration: none;
-    background-color: transparent;
-}
-
-a:hover {
-    color: rgba(255, 255, 255, 0.959);
-    text-decoration: underline;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  
-}
-.dropdown-item {
-    font-weight: 900;
-    color: black;
-    background-color: lightgray;
-    border: 0;
-}
-
-</style>
-</head>
-
-
-  <body>
+    .btn-group-lg>.btn, .btn-lg {
+        padding: .25rem .1rem;
+        font-size: 20px;
+        line-height: 1.5;
+        border-radius: 0.25rem;
+        color: #444;
+        font-weight: 700;
+        text-decoration: none;
+    
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+        background-color: transparent;
+        font-size: 18px;
+    }
+    a:hover {
+        color: #00a7b9;
+        text-decoration: underline;
+    }
+    a.house-worth {
+        color: black;
+        text-decoration: underline;
+        background-color: transparent;
+        font-size: 28px;
+    }
+    a.house-worth:hover {
+        color: #fff;
+        text-decoration: underline;
+        background-color: transparent;
+        font-size: 28px;
+    }
+    a.property-alerts {
+        color: #00a7b9;
+        text-decoration: underline;
+        background-color: transparent;
+        font-size: 28px;
+    }
+    a.property-alerts:hover {
+        color: #000;
+        text-decoration: underline;
+    }
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 0px;
+      
+    }
+    .dropdown-item {
+        font-weight: 600;
+        color: #212529;
+        background-color: #00a7b9;
+        border: 0;
+    }
+    .dropdown-menu.show {
+        display: block;
+        background-color: #00a7b9;
+    }
+    hr {
+      border: 2px solid black;
+    }
+    .cont-seller-full-service {
+        background-color: #00a7b9;
+    }
+    .cont-buyers {
+        background-color: #F9F9F9;
+    }
+    .cont-buyers p {
+        color: #101010;
+    }
+    #button-up {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: silver;
+      color: black;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 24px;
+      font-weight: 900;
+    }
+    #button-up:hover {
+      background-color: red;
+    }
+    
+    </style>
+      
+    </head>
+      <body>
     <!-- Navigation -->
-  
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Florida Real Estate 24/7 - Phone: 772.444.2305</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-            <span class="navbar-toggler-icon"></span>              
-      </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              
-                <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Cities</a>
-              </li>
-
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                  role="button" data-toggle="dropdown">Search MLS</a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-                    <a class="dropdown-item" href="map-search.html">Map Search</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="advanced-search.html">Advanced Search</a>
-                    
-                </li>
-
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                role="button" data-toggle="dropdown">Sellers</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-                  <a class="dropdown-item" href="our-listing-service.html">Our Listing Service / Deals</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="free-cma.html">Free CMA</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="selling-your-home-fsbo.html">Selling Your Home FSBO?</a>
-              </li>
-              
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                  role="button" data-toggle="dropdown">Buyers</a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  
-                  <a class="dropdown-item" href="first-time-home-buyer.html">First Time Home Buyers</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="find-the-right-home.html">Find The Right Home</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="neighborhood-finder.html">Neighborhood Finder</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="listing-alerts.html">Listing Alert</a>
-
-
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                      role="button" data-toggle="dropdown">About Us</a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand" href="#">Florida Real Estate 24/7 - Phone: 772.444.2305</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>              
+              </button>
+        
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
                       
-                      <a class="dropdown-item" href="florida-immobilien.html">Florida Immobilien</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="testimonials.html">Testimonials</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="meet-our-agents.html">Meet Our Agents</a>                       
-
-              <li class="nav-item">
-                  <a class="nav-link" href="contact-us.html">Contact Us</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
-                </li>
-            </ul>
-          </div>   
-</nav>
+                        <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+        
+                      
+                      <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown">Cities</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#pbc">Palm Beach County</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#mc">Martin County</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#slc">Saint Lucie County</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#irc">Indian River County</a>
+    
+                      </li>
+        
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                          role="button" data-toggle="dropdown">Search MLS</a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        
+                            <a class="dropdown-item" href="map-search.html">Map Search</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="advanced-search.html">Advanced Search</a>
+                            
+                        </li>
+        
+        
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                        role="button" data-toggle="dropdown">Sellers</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        
+                          <a class="dropdown-item" href="our-listing-service.html">Our Listing Service / Deals</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="free-cma.html">Free CMA</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="selling-your-home-fsbo.html">Selling Your Home FSBO</a>
+                      </li>
+                      
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                          role="button" data-toggle="dropdown">Buyers</a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          
+                            <a class="dropdown-item" href="buyers-rebate.html">Buyers Rebate</a>
+                            <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="first-time-home-buyer.html">First Time Home Buyers</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="find-the-right-home.html">Find The Right Home</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="neighborhood-finder.html">Neighborhood Finder</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="listing-alerts.html">Listing Alert</a>
+        
+        
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                              role="button" data-toggle="dropdown">About Us</a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              
+                              <a class="dropdown-item" href="florida-immobilien.html">Florida Immobilien</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="testimonials.html">Testimonials</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="meet-our-agents.html">Meet Our Agents</a>                       
+        
+                      <li class="nav-item">
+                          <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                  </div>   
+        </nav>
 
 <div class="container">              
     <div class="row" class="FTHB" style="color: black;">
