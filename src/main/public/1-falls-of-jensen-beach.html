@@ -12,7 +12,9 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">    
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"> 
+
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjscloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -23,8 +25,41 @@
   <!-- My Meta Tags etc. -->
     <meta name="description" content="Jensen Beach Homes, Jensen Beach Real Real Estate, Florida Real Estate, Waterfront homes and condos ">
     <meta name="keywords" content="Jensen Beach Real Estate, Jensen Beach Homes, Realtor, Real Estate, Homes, Conods">
-  
-    <style>
+
+    <!-- Where I found code: https://codepen.io/JacobLett/pen/xqpEYE-->
+
+    $(document).ready(function() {
+
+      // Gets the video src from the data-src on each button
+      
+      var $videoSrc;  
+      $('.video-btn').click(function() {
+          $videoSrc = $(this).data( "src" );
+      });
+      console.log($videoSrc);
+      
+        
+        
+      // when the modal is opened autoplay it  
+      $('#myModal').on('shown.bs.modal', function (e) {
+          
+      // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+      $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+      })
+        
+      
+      
+      // stop playing the youtube video when I close the modal
+      $('#myModal').on('hide.bs.modal', function (e) {
+          // a poor man's stop video
+          $("#video").attr('src',$videoSrc); 
+      }) 
+        
+      // document ready  
+      });
+    
+
+<style>
 
 a {
     color: silver;
@@ -60,9 +95,42 @@ img {
    display: block;
    width: 480px;
 }
- 
+
+<!-- Video lightbox -->
+body {margin:2rem;}
+
+.modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
+  }
+
+  .btn-info {
+    padding: 0px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    height: 50px;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
 
 </style>
+
 </head>
 
 
@@ -168,13 +236,83 @@ img {
             <section>
                     <div class="videoFrame">
                       <h2 style="font-size: 18px;">Falls of Jensen Beach Community Video</h2><iframe width="480" height="300" src="https://www.youtube.com/embed/iSn0iy6M1Tk?autupolay=1" frameborder="0" allowfullscreen></iframe>
+                    
+                    
                     </div> 
-                  </section>                 
-          </div></div>           
-      
 
- 
-     
+                    
+            </section>                 
+          </div></div>
+          
+          
+          <div class="container">
+              <h1>Play YouTube or Vimeo Videos in Bootstrap 4 Modal</h1>
+            
+            
+            
+             <!-- Button trigger modal -->
+          <button type="button" style="margin-bottom: 10px;width: 200px;" class="btn btn-info video-btn" data-toggle="modal" data-src="https://youtu.be/AqBkR1-FKCk" data-target="#myModal">
+            Ocean Towers Video
+          </button><br>
+
+          <button type="button" style="margin-bottom: 10px;width: 200px;" class="btn btn-info video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/iSn0iy6M1Tk" data-target="#myModal">
+            Jensen Beach CC<br> Glof Course
+          </button>
+            
+          <button type="button" style="margin-bottom: 10px;width: 200px;" class="btn btn-info video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/iSn0iy6M1Tk" data-target="#myModal">
+            Jensen Beach CC<br> Club House
+          </button>
+
+          <button type="button" style="margin-bottom: 10px;width: 200px;" class="btn btn-info video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/iSn0iy6M1Tk" data-target="#myModal">
+            Jensen Beach CC<br> Tennis Courts
+          </button><br>
+
+          <button type="button" style="margin-bottom: 10px;width: 200px;" class="btn btn-info video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/iSn0iy6M1Tk" data-target="#myModal">
+            Jensen Beach CC<br> Tennis Courts
+          </button><br>
+            
+          <button type="button" style="margin-bottom: 10px;width: 200px;" class="btn btn-info video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/iSn0iy6M1Tk" data-target="#myModal">
+            Jensen Beach CC<br> Tennis Courts
+          </button><br>
+            
+          <button type="button" style="margin-bottom: 10px;width: 200px;" class="btn btn-info video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/iSn0iy6M1Tk" data-target="#myModal">
+            Jensen Beach CC<br> Tennis Courts
+          </button><br>
+          
+          <button type="button" style="margin-bottom: 10px;width: 200px;" class="btn btn-info video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/iSn0iy6M1Tk" data-target="#myModal">
+            Jensen Beach CC<br> Tennis Courts
+          </button><br>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+          
+                
+                <div class="modal-body">
+          
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>        
+                  <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+          </div>
+                  
+                  
+                </div>
+          
+              </div>
+            </div>
+          </div> 
+            
+            
+            
+          </div>
+      
+          
+          
       
 </body>
+
 </html>
