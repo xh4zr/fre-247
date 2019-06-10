@@ -7,7 +7,7 @@
   <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-    <link href="src/main/public/css/stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="src/main/public/css/stylesheet.css" rel="" type="text/css">
 
 
   <!-- Bootstrap CSS -->
@@ -25,13 +25,13 @@
     <meta name="description" content="Florida Real Estate, Jensen Beach Homes, Jensen Beach Condos, Jensen Beach Real Real Estate">
     <meta name="keywords" content="Florida Real Estate">
   
-<style>
+  <style>
 .btn-group-lg>.btn, .btn-lg {
     padding: .25rem .1rem;
     font-size: 20px;
     line-height: 1.5;
     border-radius: 0.25rem;
-    color: #444;
+    color: black;
     font-weight: 700;
     text-decoration: none;
 
@@ -117,8 +117,19 @@ hr {
   background-color: red;
 }
 
-</style>
+/* Community Pages*/
+.videoFrame{
+    width:100%:    
+  }
   
+  .videoFrame iframe{
+     margin: 0 auto;
+     display: block;
+     width: 480px;
+  }
+
+</style>
+
 </head>
   <body>
 <!-- Navigation -->
@@ -211,7 +222,7 @@ hr {
                 </ul>
               </div>   
     </nav>
-<!-- Go to top -->
+<!-- Go to top button -->
   <button onclick="topFunction()" id="button-up" title="Go to top">Top</button>
 
 <!-- Main BG Image -->
@@ -224,13 +235,14 @@ hr {
     </div>
 </div>
 </section>                
- <!-- List of cities -->   
+ <!-- Palm Beach County cities -->   
  <section style="background-color: #fff;">
- <div class="container">              
+ <div class="container" id="pbc">              
     <div class="row" style="color: black;">
       <div class="col-md-12" style="font-size: 50px; padding: 20px">                 
-        <h3 id="pbc" style="text-align: center; font-weight: 900; color: #00a7b9">Palm Beach County<br></h3>
-        <h4 style="text-align: center; color: #000">Select A City To View Real Estate Listed For Sale & Rent </h4>                     
+        <h3 style="text-align: center; font-weight: 900; color: #00a7b9" >Palm Beach County<br></h3>
+        <h4 style="text-align: center; color: #000">Select A City To View Real Estate Listed For Sale & Rent </h4>  
+
       </div>
           
         <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                 
@@ -350,20 +362,21 @@ hr {
             <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/wellington" title="Wellington real estate. View Wellington homes and condos for sale & rent">Wellington</a>                      
         </div>
 
-        <div class="col-md-4" style="margin-bottom: 50px;">                  
+        <div class="col-md-4" style="margin-bottom: 25px;">                  
             <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/west-palm-beach" title="West Palm Beach real estate. View West Palm Beach homes and condos for sale & rent">West Palm Beach</a>                      
         </div>
     </div>
 </div>
 </section>
 
- <!-- Martin County cities -->   
+ <!-- Martin County cities --> 
+   
  <section style="background-color: #000;">
- <div class="container">              
-    <div class="row" style="color: black;">
-        <div class="col-md-12" style="font-size: 50px; padding: 20px;"></style>                 
-            <h3 style="text-align: center; font-weight: 900; color: #00a7b9;" id="mc">Martin County<br></h3>
-            <h4 style="text-align: center; color: #fff;">Select A City To View Real Estate Listed For Sale & Rent </h4>
+ <div class="container" id="mc">              
+    <div  class="row"  style="color: black;">
+        <div  class="col-md-12" style="font-size: 50px; padding: 20px;"></style>                 
+            <h3 style="text-align: center; font-weight: 900; color: #00a7b9;" >Martin County<br></h3>
+            <h4  style="text-align: center; color: #fff;">Select A City To View Real Estate Listed For Sale & Rent </h4>
         </div>        
           
         <div class="col-md-4 col-sm-6" style="margin-bottom: 10px;">                  
@@ -390,7 +403,7 @@ hr {
             <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/stuart" title="Stuart real estate. View Stuart homes and condos for sale & rent">Stuart</a>                      
         </div>
   
-        <div class="col-md-12" style="margin-bottom: 30px;">                  
+        <div class="col-md-12" style="margin-bottom: 25px;">                  
             <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/hutchinson-island" title="Hutchinson Island real estate. View Hutchinson Island homes and condos for sale & rent">Hutchinson Island</a>                      
         </div>
     </div> 
@@ -399,11 +412,11 @@ hr {
 
  <!-- Saint Lucie County cities -->
  <section style="background-color: #fff;">   
-<div class="container">              
+<div class="container" id="slc">              
     <div class="row" style="color: black;">
                 
-        <div class="col-md-12" style="padding: 20px; margin-bottom: 10px; font-size: 50px;">                
-            <h3 id="slc" style="text-align: center; font-weight: 900; color: #00a7b9">Saint Lucie County<br></h3>
+        <div class="col-md-12" style="padding: 20px; margin-bottom: 0px; font-size: 50px;">                
+            <h3 style="text-align: center; font-weight: 900; color: #00a7b9">Saint Lucie County<br></h3>
             <h4 style="text-align: center; color: black">Select A City To View Real Estate Listed For Sale & Rent </h4>              </div>        
   
         <div class="col-md-4" style="margin-bottom: 10px;">                  
@@ -423,11 +436,11 @@ hr {
 
  <!-- Indian River County cities -->   
  <section style="background-color: #000;">
- <div class="container">              
-    <div class="row" style="padding: 20px; color: black;">
+ <div class="container" id="irc">              
+    <div class="row" style="color: black;">
        
-        <div class="col-md-12" style="margin-bottom: 10px; font-size: 50px;"></style>                 
-            <h3 id="irc" style="text-align: center; font-weight: 900; color: #00a7b9">Indian River County<br></h3>
+        <div class="col-md-12" style="padding: 20px; margin-bottom: 0px; font-size: 50px;"></style>                 
+            <h3 style="text-align: center; font-weight: 900; color: #00a7b9">Indian River County<br></h3>
             <h4 style="text-align: center; color: #fff">Select A City To View Real Estate Listed For Sale & Rent </h4>
         </div> 
   
@@ -439,7 +452,7 @@ hr {
             <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/fellsmere" title="Fellsmere real estate. View Fellsmere homes and condos for sale & rent">Fellsmere</a>                      
         </div>
 
-        <div class="col-md-4" style="margin-bottom: 10px;">                  
+        <div class="col-md-4" style="margin-bottom: 25px;">                  
             <a class="btn btn-info btn-lg btn-block" href="https://floridarealestate247.com/sebastian" title="Sebastian real estate. View Sebastian homes and condos for sale & rent">Sebastian</a>                      
         </div>
     </div> 
