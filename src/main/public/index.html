@@ -36,16 +36,33 @@
     text-decoration: none;
 
 }
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 20px;
+}
+
 a {
     color: #fff;
     text-decoration: none;
     background-color: transparent;
     font-size: 18px;
 }
+
+<!-- Links to city pages within footer -->
 a:hover {
     color: #00a7b9;
     text-decoration: underline;
 }
+
+a.footer-links {
+    color:#00a7b9
+}
+
+a.footer-links:hover {
+    color:#fff
+}
+
 a.house-worth {
     color: black;
     text-decoration: underline;
@@ -77,13 +94,13 @@ img {
 }
 .dropdown-item {
     font-weight: 600;
-    color: #212529;
-    background-color: #00a7b9;
-    border: 0;
+    color: #00a7b9;
+    background-color: #fff;
+    border: 0px;
 }
 .dropdown-menu.show {
     display: block;
-    background-color: #00a7b9;
+    background-color: #fff;
 }
 hr {
   border: 2px solid black;
@@ -92,11 +109,13 @@ hr {
     background-color: #00a7b9;
 }
 .cont-buyers {
-    background-color: #F9F9F9;
+    background-color: #fff;
 }
 .cont-buyers p {
     color: #101010;
 }
+
+<!-- go back to top of pages -->
 #button-up {
   display: none;
   position: fixed;
@@ -116,17 +135,6 @@ hr {
 #button-up:hover {
   background-color: red;
 }
-
-/* Community Pages*/
-.videoFrame{
-    width:100%:    
-  }
-  
-  .videoFrame iframe{
-     margin: 0 auto;
-     display: block;
-     width: 480px;
-  }
 
 </style>
 
@@ -370,7 +378,6 @@ hr {
 </section>
 
  <!-- Martin County cities --> 
-   
  <section style="background-color: #000;">
  <div class="container" id="mc">              
     <div  class="row"  style="color: black;">
@@ -460,8 +467,8 @@ hr {
 </section> 
           
  <!--Buyers Cash Back-->
- <section>
- <div class="container">
+ <section style="background-color: #fff">
+ <div class="container" >
      <div class="cont-buyers">
 
             <div class="row" style="color: black;">
@@ -543,134 +550,156 @@ hr {
 </div>
 </section>
         
- <!--Footer-->
- <section style="background-color: #000;">
-        <div class="container">
-    <div class="row" style="margin: 0px;" style="margin-top: 0px; color: black;"></style>
-
-        <div class="col-md-2" style="text-align: center; padding-top: 15px; color: #fff; font-weight: 0; 
-            background-color: #000; font-size: 16px;"> 
-            <img src="images/FLRE247-Logo.gif" margin-top="10px" alt="Florida Real Estate 24/7 - Jensen Beach Florida" width="150" height="80" />
-            <br>850 NW Federal Hwy Way #409<br>Stuart, FL 34994<br>Phone/Text:<br>772.444.2305<br> <a href="https://floridarealestate247.com/contact-us/">Email Us</a>
-            <br><a href="https://floridarealestate247.com/sitemap_index.xml">Site Map</a>            
+<!-- Footer -->
+<footer>
+        <section style="background-color: #000;">
+                <div class="container">
+            <div class="row" style="color: black;"></style>
+        
+                <div class="col-md-2" style="text-align: center; padding-top: 15px; color: #fff; font-weight: 0; 
+                    background-color: #000; font-size: 16px;"> 
+                    <img src="images/FLRE247-Logo.gif" margin-top="10px" alt="Florida Real Estate 24/7 - Jensen Beach Florida" width="150" height="80" />
+                    <br>850 NW Federal Hwy Way #409<br>Stuart, FL 34994<br>Phone/Text:<br>772.444.2305<br> <a class="footer-links" href="https://floridarealestate247.com/contact-us/">Email Us</a>
+                    <br><a class="footer-links" href="https://floridarealestate247.com/sitemap_index.xml">Site Map</a>            
+                </div>
+        
+                <div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; background-color:#000; font-size: 16px;"></style>                 
+                <font color="#fff">Palm Beach County:</font>
+                <ul>
+                <li><a class="footer-links" class="footer-links" class="footer-links" href="https://floridarealestate247.com/atlantis/" title="Atlantis homes for sale">Atlantis</a></li>
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/boca-raton/" title="Boca Raton homes for sale">Boca Raton</a></li>
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/boynton-beach/" title="Boynton Beach homes for sale">Boynton Beach</a></li>
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/briny-breezes/" title="Briny Breezes homes for sale">Briny Breezes</a></li> 
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/greenacres/" title="Greenacres homes for sale">Greenacres</a></li> 
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/gulf-stream/" title="Gulf Stream homes for sale">Gulf Stream</a></li> 
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/highland-beach/" title="Highland Beach homes for sale">Highland Beach</a></li> 
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/hypoluxo/" title="Hypoluxo homes for sale">Hypoluxo</a></li> 
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/juno-beach/" title="Juno Beach homes for sale">Juno Beach</a></li> 
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/jupiter/" title="Jupiter homes for sale">Jupiter</a></li> 
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/jupiter-inlet/" title="Jupiter Inlet homes for sale">Jupiter Inlet</a></li> 
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/lake-clark-shores/" title="Lake Clark Shores homes for sale">Lake Clark Shores</a></li> 
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/lake-park/" title="Lake Park homes for sale">Lake Park</a></li> 
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/lake-worth/" title="Lake Worth homes for sale">Lake Worth</a></li> 
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/lantana/" title="Lantana homes for sale">Lantana</a></li> 
+                </ul>
+            </div>
+        
+        <div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; font-weight: 0; background-color:#000; font-size: 16px;"></style>                 
+            <font color="#fff">Palm Beach County:</font>
+            <ul>
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/loxahatchee/" title="Loxahatchee homes for sale">Loxahatchee</a></li> 
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/manalapan/" title="Manalapan homes for sale">Manalapan</a></li> 
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/north-palm-beach/" title="North Palm Beach homes for sale">North Palm Beach</a></li> 
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/ocean-ridge/" title="Ocean Ridge homes for sale">Ocean Ridge</a></li> 
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/palm-beach/" title=" homes for sale">Palm Beach</a></li> 
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/palm-beach-gardens/" title="Palm Beach Gardens homes for sale">Palm Beach Gardens</a></li> 
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/palm-springs/" title="Palm Springs homes for sale">Palm Springs</a></li> 
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/riviera-beach/" title="Riviera Beach homes for sale">Riviera Beach</a></li> 
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/royal-palm-beach/" title="Royal Palm Beach homes for sale">Royal Palm Beach</a></li> 
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/singer-island/" title="Singer Island homes for sale">Singer Island</a></li> 
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/south-palm-beach/" title="South Palm Beach homes for sale">South Palm Beach</a></li> 
+        
+                <li><a class="footer-links" class="footer-links" href="https://floridarealestate247.com/tequesta/" title="Tequesta homes for sale">Tequesta</a></li>
+        
+                <li><a class="footer-links" href="https://floridarealestate247.com/wellington/" title="Wellington homes for sale">Wellington</a></li> 
+        
+                <li><a class="footer-links" href="https://floridarealestate247.com/west-palm-beach/" title="West Palm Beach homes for sale">West Palm Beach</a>
+            </ul>
         </div>
-
-        <div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; background-color:#000; font-size: 14px;"></style>                 
-        <font color="#00a7b9">Palm Beach County:</font>
-        <ul>
-        <li><a href="https://floridarealestate247.com/atlantis/" title="Atlantis homes for sale">Atlantis</a></li>
-
-        <li><a href="https://floridarealestate247.com/boca-raton/" title="Boca Raton homes for sale">Boca Raton</a></li>
-
-        <li><a href="https://floridarealestate247.com/boynton-beach/" title="Boynton Beach homes for sale">Boynton Beach</a></li>
-
-        <li><a href="https://floridarealestate247.com/briny-breezes/" title="Briny Breezes homes for sale">Briny Breezes</a></li> 
-
-        <li><a href="https://floridarealestate247.com/greenacres/" title="Greenacres homes for sale">Greenacres</a></li> 
-
-        <li><a href="https://floridarealestate247.com/gulf-stream/" title="Gulf Stream homes for sale">Gulf Stream</a></li> 
-
-        <li><a href="https://floridarealestate247.com/highland-beach/" title="Highland Beach homes for sale">Highland Beach</a></li> 
-
-        <li><a href="https://floridarealestate247.com/hypoluxo/" title="Hypoluxo homes for sale">Hypoluxo</a></li> 
-
-        <li><a href="https://floridarealestate247.com/juno-beach/" title="Juno Beach homes for sale">Juno Beach</a></li> 
-
-        <li><a href="https://floridarealestate247.com/jupiter/" title="Jupiter homes for sale">Jupiter</a></li> 
-
-        <li><a href="https://floridarealestate247.com/jupiter-inlet/" title="Jupiter Inlet homes for sale">Jupiter Inlet</a></li> 
-
-        <li><a href="https://floridarealestate247.com/lake-clark-shores/" title="Lake Clark Shores homes for sale">Lake Clark Shores</a></li> 
-
-        <li><a href="https://floridarealestate247.com/lake-park/" title="Lake Park homes for sale">Lake Park</a></li> 
-
-        <li><a href="https://floridarealestate247.com/lake-worth/" title="Lake Worth homes for sale">Lake Worth</a></li> 
-
-        <li><a href="https://floridarealestate247.com/lantana/" title="Lantana homes for sale">Lantana</a></li> 
-        </ul>
-    </div>
-
-<div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; font-weight: 0; background-color:#000; font-size: 14px;"></style>                 
-    <font color="#00a7b9">Palm Beach County:</font>
-    <ul>
-        <li><a href="https://floridarealestate247.com/loxahatchee/" title="Loxahatchee homes for sale">Loxahatchee</a></li> 
-
-        <li><a href="https://floridarealestate247.com/manalapan/" title="Manalapan homes for sale">Manalapan</a></li> 
-        <li><a href="https://floridarealestate247.com/north-palm-beach/" title="North Palm Beach homes for sale">North Palm Beach</a></li> 
-
-        <li><a href="https://floridarealestate247.com/ocean-ridge/" title="Ocean Ridge homes for sale">Ocean Ridge</a></li> 
-
-        <li><a href="https://floridarealestate247.com/palm-beach/" title=" homes for sale">Palm Beach</a></li> 
-
-        <li><a href="https://floridarealestate247.com/palm-beach-gardens/" title="Palm Beach Gardens homes for sale">Palm Beach Gardens</a></li> 
-
-        <li><a href="https://floridarealestate247.com/palm-springs/" title="Palm Springs homes for sale">Palm Springs</a></li> 
-
-        <li><a href="https://floridarealestate247.com/riviera-beach/" title="Riviera Beach homes for sale">Riviera Beach</a></li> 
-
-        <li><a href="https://floridarealestate247.com/royal-palm-beach/" title="Royal Palm Beach homes for sale">Royal Palm Beach</a></li> 
-
-        <li><a href="https://floridarealestate247.com/singer-island/" title="Singer Island homes for sale">Singer Island</a></li> 
-
-        <li><a href="https://floridarealestate247.com/south-palm-beach/" title="South Palm Beach homes for sale">South Palm Beach</a></li> 
-
-        <li><a href="https://floridarealestate247.com/tequesta/" title="Tequesta homes for sale">Tequesta</a></li>
-
-        <li><a href="https://floridarealestate247.com/wellington/" title="Wellington homes for sale">Wellington</a></li> 
-
-        <li><a href="https://floridarealestate247.com/west-palm-beach/" title="West Palm Beach homes for sale">West Palm Beach</a>
-    </ul>
-</div>
+                
+            <div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; font-weight: 0; background-color:#000; font-size: 16px;"></style>                 
+                <font color="#fff">St Lucie County:</font><BR>
+                <ul>
+                <li><a class="footer-links" href="https://floridarealestate247.com/hutchinson-island/" title="Hutchinson Island homes for sale">Hutchinson Island</a></li> 
         
-    <div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; font-weight: 0; background-color:#000; font-size: 14px;"></style>                 
-        <font color="#00a7b9">St Lucie County:</font><BR>
-        <ul>
-        <li><a href="https://floridarealestate247.com/hutchinson-island/" title="Hutchinson Island homes for sale">Hutchinson Island</a></li> 
-
-        <li><a href="https://floridarealestate247.com/port-saint-lucie/" title="Port St Lucie homes for sale">Port St Lucie</a></li> 
-
-        <li><a href="https://floridarealestate247.com/fort-pierce/" title="Fort Pierce homes for sale">Fort Pierce</a>
-        </ul>
-
-    </div>
-
-
-    <div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; font-weight: 0; background-color:#000; font-size: 14px;"></style>                 
-        <font color="#00a7b9">Martin County:</font>
-        <ul>
+                <li><a class="footer-links" href="https://floridarealestate247.com/port-saint-lucie/" title="Port St Lucie homes for sale">Port St Lucie</a></li> 
         
-        <li><a href="https://floridarealestate247.com/hobe-sound/" title="Hobe Sound homes for sale">Hobe Sound</a></li> 
-
-        <li><a href="https://floridarealestate247.com/hutchinson-island/" title="Hutchinson Island homes for sale">Hutchinson Island</a></li> 
-
-        <li><a href="https://floridarealestate247.com/jensen-beach/" title="Jensen Beach homes for sale">Jensen Beach</a></li> 
-
-        <li><a href="https://floridarealestate247.com/palm-city/" title="Palm City homes for sale">Palm City</a></li> 
-
-        <li><a href="https://floridarealestate247.com/sewalls-point/" title="Sewall’s Point homes for sale">Sewall's Point</a></li> 
-
-        <li><a href="https://floridarealestate247.com/stuart/" title="Stuart homes for sale">Stuart </a><BR>
-        </ul>
-
-
-    </div>    
-
-
-    <div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; font-weight: 0; background-color:#000; font-size: 14px;"></style>                 
+                <li><a class="footer-links" href="https://floridarealestate247.com/fort-pierce/" title="Fort Pierce homes for sale">Fort Pierce</a>
+                </ul>
         
-        <font color="#00a7b9">Indian River County:</font>
-        <ul>
-        <li><a href="https://floridarealestate247.com/fellsmere/" title="Fellsmere homes for sale">Fellsmere</a></li> 
+            </div>
+        
+        
+            <div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; font-weight: 0; background-color:#000; font-size: 16px;"></style>                 
+                <font color="#fff">Martin County:</font>
+                <ul>
+                
+                <li><a class="footer-links" href="https://floridarealestate247.com/hobe-sound/" title="Hobe Sound homes for sale">Hobe Sound</a></li> 
+        
+                <li><a class="footer-links" href="https://floridarealestate247.com/hutchinson-island/" title="Hutchinson Island homes for sale">Hutchinson Island</a></li> 
+        
+                <li><a class="footer-links" href="https://floridarealestate247.com/jensen-beach/" title="Jensen Beach homes for sale">Jensen Beach</a></li> 
+        
+                <li><a class="footer-links" href="https://floridarealestate247.com/palm-city/" title="Palm City homes for sale">Palm City</a></li> 
+        
+                <li><a class="footer-links" href="https://floridarealestate247.com/sewalls-point/" title="Sewall’s Point homes for sale">Sewall's Point</a></li> 
+        
+                <li><a class="footer-links" href="https://floridarealestate247.com/stuart/" title="Stuart homes for sale">Stuart </a><BR>
+                </ul>
+        
+        
+            </div>    
+        
+        
+            <div class="col-md-2" style="margin-top: 0px; padding-top: 15px; padding-left: 25px; font-weight: 0; background-color:#000; font-size: 16px;"></style>                 
+                
+                <font color="#fff">Indian River County:</font>
+                <ul>
+                <li><a class="footer-links" href="https://floridarealestate247.com/fellsmere/" title="Fellsmere homes for sale">Fellsmere</a></li> 
+        
+                <li><a class="footer-links" href="https://floridarealestate247.com/sebastian/" title="Sebastian homes for sale">Sebastian</a></li> 
+        
+                <li><a class="footer-links" href="https://floridarealestate247.com/vero-beach/" title="Vero Beach homes for sale">Vero Beach</a></li><BR>
+                </ul>
+            </div>
+        
+        </div>
+        </div>
+        </section>
+        
+</footer>
 
-        <li><a href="https://floridarealestate247.com/sebastian/" title="Sebastian homes for sale">Sebastian</a></li> 
-
-        <li><a href="https://floridarealestate247.com/vero-beach/" title="Vero Beach homes for sale">Vero Beach</a></li><BR>
-        </ul>
-    </div>
-
-</div>
-</div>
-</section>
+<!-- Accordion Script -->
+<script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
+    
 
  <!--Button To Top-->
  <script>
@@ -690,7 +719,8 @@ hr {
           document.documentElement.scrollTop = 0;
         }
         </script>
-        
+
+
 <!--Start of Chat Tawk.to Script-->
 <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -703,6 +733,6 @@ hr {
     s0.parentNode.insertBefore(s1,s0);
     })();
     </script>
-    <!--End of Tawk.to Script-->
+<!--End of Tawk.to Script-->
 </body>
 </html>
