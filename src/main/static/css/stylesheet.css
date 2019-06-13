@@ -1,0 +1,212 @@
+/* My Code*/
+/*index-html*/
+.btn-group-lg>.btn, .btn-lg {
+    padding: .25rem .1rem;
+    font-size: 20px;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    color: #444;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 18px;
+}
+a:hover {
+    color: #00a7b9;
+    text-decoration: underline;
+}
+a.house-worth {
+    color: black;
+    text-decoration: underline;
+    background-color: transparent;
+    font-size: 28px;
+}
+a.house-worth:hover {
+    color: #fff;
+    text-decoration: underline;
+    background-color: transparent;
+    font-size: 28px;
+}
+a.property-alerts {
+    color: #00a7b9;
+    text-decoration: underline;
+    background-color: transparent;
+    font-size: 28px;
+}
+a.property-alerts:hover {
+    color: #000;
+    text-decoration: underline;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0px;
+  
+}
+.dropdown-item {
+    font-weight: 600;
+    color: #212529;
+    background-color: #00a7b9;
+    border: 0;
+}
+.dropdown-menu.show {
+    display: block;
+    background-color: #00a7b9;
+}
+hr {
+  border: 2px solid black;
+}
+.cont-seller-full-service {
+    background-color: #00a7b9;
+}
+.cont-buyers {
+    background-color: #F9F9F9;
+}
+.cont-buyers p {
+    color: #101010;
+}
+#button-up {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: silver;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 24px;
+  font-weight: 900;
+}
+#button-up:hover {
+  background-color: red;
+}
+
+/* Community Pages*/
+.videoFrame{
+    width:100%:    
+  }
+  
+  .videoFrame iframe{
+     margin: 0 auto;
+     display: block;
+     width: 480px;
+  }
+
+  .btn-group-lg>.btn, .btn-lg {
+    padding: .25rem .1rem;
+    font-size: 20px;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+/* Header */
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 20px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+a:hover {
+    color: #00a7b9;
+    text-decoration: underline;
+}
+
+a.footer-links {
+    color:#00a7b9
+}
+
+a.footer-links:hover {
+    color:#fff
+}
+
+a.house-worth {
+    color: black;
+    text-decoration: underline;
+    background-color: transparent;
+    font-size: 28px;
+}
+a.house-worth:hover {
+    color: #fff;
+    text-decoration: underline;
+    background-color: transparent;
+    font-size: 28px;
+}
+a.property-alerts {
+    color: #00a7b9;
+    text-decoration: underline;
+    background-color: transparent;
+    font-size: 28px;
+}
+a.property-alerts:hover {
+    color: #000;
+    text-decoration: underline;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0px;
+  
+}
+.dropdown-item {
+    font-weight: 600;
+    color: #00a7b9;
+    background-color: #fff;
+    border: 0px;
+}
+.dropdown-menu.show {
+    display: block;
+    background-color: #fff;
+}
+hr {
+  border: 2px solid black;
+}
+.cont-seller-full-service {
+    background-color: #00a7b9;
+}
+.cont-buyers {
+    background-color: #fff;
+}
+.cont-buyers p {
+    color: #101010;
+}
+
+#button-up {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: silver;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 24px;
+  font-weight: 900;
+}
+#button-up:hover {
+  background-color: red;
+}
